@@ -21,7 +21,7 @@ const create = catchError(async(req, res) => {
     await sendEmail({
         to:email,
         subject:"Verifiacion de cuenta",
-        html:`<h2>Haz click en el siguiuente enlace para verificar tu cuenta:</h2>
+        html:`<h2>Haz click en el siguiente enlace para verificar tu cuenta:</h2>
         <a href=${url}>Click me!</a>
         `
     })
